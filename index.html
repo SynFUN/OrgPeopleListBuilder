@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="https://github.com/SynthesisDu">
+    <meta name="description" content="https://github.com/SynRGB/QueryPeopleInOrg">
+    <meta name="viewport" content="width=device-width, initial-scale-1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Title</title>
+</head>
+
+<body>
+<div align="center">
+    <h1>QueryPeopleInOrg</h1>
+    <h3>Now give the organization's GitHub ID</h3>
+    <p>eg: If the organization&#39;s page link is【https://github.com/<u>SynRGB</u>】, then fill in【SynRGB】</p>
+    <input type="text" id="org" placeholder="type in here" required>
+    <button type="button" id="submit">submit</button>
+    <p>After click the <strong>&quot;submit&quot; button</strong>, the crawler will <strong>begin to collect data
+        automatically</strong>.</p>
+    <p>So you can now minimize the page and wait, or <strong>at least don&#39;t do anything</strong>.</p>
+</div>
+<div align="center">
+    <hr/>
+    <div id="fileList">
+        <h3>Here will show the databases already formed (if has):</h3>
+        <ul id="fileListUl" style="background-color: darkgray;width: 40%;"></ul>
+    </div>
+    <script type="text/javascript">
+        function addNewElements(file_name, dir_url) {
+            document.getElementById("fileListUl").innerHTML +=
+                "<li><a href='" + dir_url + file_name + "'>" + file_name + "</a></li>";
+        }
+    </script>
+</div>
+<script type="text/javascript">
+    function jump() {
+        let org = document.getElementById("org").value;
+        if (org === "") {
+            alert("You need to fill in the organization's GitHub ID first!");
+        } else {
+            window.location.href = "https://github.com/orgs/" + org + "/people?page=1";
+        }
+    }
+
+    if (document.getElementById("submit").addEventListener("click", jump)) {
+        jump();
+    }
+</script>
+</body>
+</html>
