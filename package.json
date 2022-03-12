@@ -19,7 +19,7 @@
   "author": "GitHub@SynthesisDu",
   "license": "MPL-2.0",
   "dependencies": {
-    "puppeteer": "^13.4.0",
+    "puppeteer": "^13.5.1",
     "sqlite3": "^5.0.2",
     "tsc": "^2.0.4"
   }
