@@ -13,7 +13,7 @@ const {database} = require("./database");
             '--disable-ios-password-suggestions'            // 不保存密码 | do not memory passwords
         ],
         timeout: 8000,
-        defaultViewport: null,                              // 长宽自适应 | auto fit the size
+        defaultViewport: null,                              // 长宽自适应 | auto-fit the size
         ignoreHTTPSErrors: true,                            // 忽略证书错误 | ignore https' credential
         headless: false                                     // 关闭无头模式 | turn off headless
     });

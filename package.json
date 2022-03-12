@@ -1,7 +1,7 @@
 {
   "name": "QueryPeopleInOrg",
-  "version": "1.0.0",
-  "description": "对于诸如@EpicGames这样有380,000+人的超大型Org，在people中搜索用户名会卡死，报错timeout，因此只能用爬虫爬下来在本地数据库搜索以找到自己的位置。| For a very large organization such as @epicGames with 380,000+ people, search username will cause timeout error, so have to crawl down to search by local database to find onself's position.",
+  "version": "1.1",
+  "description": "Puppeteer 爬虫，有界面交互逻辑，用来爬取 GitHub Organization 的人员名单与对应所在的页数。| A Puppeteer crawler project with interface interaction logic that crawls the GitHub Organization's people list and their corresponding pages.",
   "main": "main.js",
   "scripts": {
     "bat": "run.bat",
@@ -22,5 +22,8 @@
     "puppeteer": "^13.5.1",
     "sqlite3": "^5.0.2",
     "tsc": "^2.0.4"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.21"
   }
 }
