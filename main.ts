@@ -108,7 +108,7 @@ const {database} = require("./database");
             let db = new database(organization_name);
             // 此while循环用于遍历用户网页 | while loop for traverse all people's pages
             let page_counter = 1;
-            while (Number(page_counter) !== Number(last_page_number)) {
+            while (Number(page_counter) !== Number(Number(last_page_number) + 1)) {
                 try {
                     await page.goto(people_page_url + page_counter);
                     // 等待选择器检测 确保加载完成 提高鲁棒性 | waiting for selector find target to improve robustness
