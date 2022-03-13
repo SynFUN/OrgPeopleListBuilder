@@ -11,7 +11,7 @@ database.obj = function (organization_name) {
     } catch (err) {
         console.log('CREATE TABLE IF NOT EXISTS users (name text primary key, page_number text);');
     }
-}
+};
 database.obj.prototype.insert = function (name, page_number) {
     // 防注入过滤 | filtration chars that will cause SQL errors
     name = name.replace(/[^a-zA-Z0-9]/g, '');
@@ -20,7 +20,7 @@ database.obj.prototype.insert = function (name, page_number) {
             console.log('INSERT INTO users VALUES ("' + name + '", "' + page_number + '");');
         }
     });
-}
+};
 database.obj.prototype.close = function () {
     // 生成csv版本的文件 | form a csv file of the users table
     con.all('SELECT * FROM users', function (err, rows) {
