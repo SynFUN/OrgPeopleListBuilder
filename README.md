@@ -2,7 +2,7 @@
 
 一个半练手性质的 Puppeteer 爬虫，有界面交互逻辑，用来爬取 GitHub Organization 的人员名单与对应所在的页数。目的是想解决由于 Organization 人数过多导致的搜索功能 timeout 报错的问题。
 
-A Puppeteer crawler project with interface interaction logic that crawls the GitHub Organization's people list and their corresponding pages. The purpose is to solve the problem that the search function timeout fails due to too many people in the Organization.
+A Puppeteer crawler project for practising with interface interaction logic that crawls the GitHub Organization's people list and their corresponding pages. The purpose is to solve the problem that the search function timeout fails due to too many people in the Organization.
 
 | 要爬取的 organization 的人员列表 | <img src=".\README\1.png" alt="1" style="zoom:67%;" />       | people's list for an organization as the datas this script collect |
 | -------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
