@@ -7,7 +7,7 @@ A Puppeteer crawler project with interface interaction logic that crawls the Git
 | 要爬取的 organization 的人员列表 | <img src=".\README\1.png" alt="1" style="zoom:67%;" />       | people's list for an organization as the datas this script collect |
 | -------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | 将人员名与所在的页码相对应       | <img src=".\README\2.png" alt="2" />                          | corresponding people's name with the page number             |
-| 通过这样的格式可以访问指定的页码 | https://github.com/orgs/`{ORG_NAME}`/people?page=`{PAGE_NUMBER}` | view specific page by url in this format                     |
+| 通过这样的格式可以访问指定的页码 | `https://github.com/orgs/`{ORG_NAME}`/people?page=`{PAGE_NUMBER} | view specific page by url in this format                     |
 | 如果直接搜索会得到这样的结果     | <img src=".\README\3.png" alt="3" style="zoom: 67%;" />      | this is the result for searching it                          |
 | 这是搜索的格式                   | `https://github.com/orgs/{ORG_NAME}/people?query={SEARCH_STRING}` | this is the searching format                                 |
 
